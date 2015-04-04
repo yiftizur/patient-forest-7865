@@ -1,0 +1,10 @@
+html
+  head
+    title Beautiful Angular
+    link(rel='stylesheet', href='vendor/css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/app.css')
+    script(src='js/app.js')
+  body(ng-app='beautiful')
+    section(ng-controller='HomeController')
+      h1 {{ heading() }}
+      input(type='text', ng-model='name')
